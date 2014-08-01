@@ -5,7 +5,7 @@
     <artifactId>elastic-search-module_2.10</artifactId>
     <packaging>jar</packaging>
     <description>elastic-search-module</description>
-    <version>1.0</version>
+    <version>1.0.0</version>
     <name>elastic-search-module</name>
     <organization>
         <name>com.vikasdp.elasticplay</name>
