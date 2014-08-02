@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
-	<info organisation="com.vikasdp.elasticplay" module="elastic-search-module_2.10" revision="1.0.0" status="release" publication="20140802133541">
+	<info organisation="com.vikasdp.elasticplay" module="elastic-search-module_2.10" revision="1.0.0" status="release" publication="20140802144926">
 		<description>
 		elastic-search-module
 		</description>
@@ -16,7 +16,7 @@
 		
 		
 		<conf name="sources" visibility="public" description=""/>
-		
+		<conf name="docs" visibility="public" description=""/>
 		<conf name="pom" visibility="public" description=""/>
 		
 	</configurations>
@@ -24,19 +24,15 @@
 		<artifact name="elastic-search-module_2.10" type="pom" ext="pom" conf="pom"/>
 		<artifact name="elastic-search-module_2.10" type="jar" ext="jar" conf="compile"/>
 		<artifact name="elastic-search-module_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		
+		<artifact name="elastic-search-module_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
 		
-		<dependency org="org.scala-lang" name="scala-library" rev="2.10.3" conf="compile->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.10.4" conf="compile->default(compile)"/>
 		<dependency org="org.elasticsearch" name="elasticsearch" rev="1.3.0" conf="compile->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.10" rev="2.1.5" conf="test->default(compile)"/>
 		<dependency org="org.scalacheck" name="scalacheck_2.10" rev="1.11.3" conf="test->default(compile)"/>
 		<dependency org="org.scalatestplus" name="play_2.10" rev="1.0.0" conf="test->default(compile)"/>
 		<dependency org="org.scalaz" name="scalaz-core_2.10" rev="7.0.6" conf="compile->default(compile)"/>
-		<dependency org="org.typelevel" name="scalaz-contrib-210_2.10" rev="0.1.5" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play_2.10" rev="2.2.2" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play-test_2.10" rev="2.2.2" conf="test->default(compile)"/>
-		
 	</dependencies>
 </ivy-module>
