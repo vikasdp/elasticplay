@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
-	<info organisation="com.vikasdp.elasticplay" module="elastic-search-module_2.10" revision="1.0.0" status="release" publication="20140802144926">
+	<info organisation="com.vikasdp.elasticplay" module="elastic-search-module_2.10" revision="1.0.0" status="release" publication="20140802151505">
 		<description>
 		elastic-search-module
 		</description>
